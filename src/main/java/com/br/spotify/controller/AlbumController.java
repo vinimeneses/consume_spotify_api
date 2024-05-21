@@ -19,7 +19,7 @@ public class AlbumController {
 
     @GetMapping("/albums")
     public ResponseEntity<String> helloWorld() {
-        return ResponseEntity.ok(authSpotifyClient.login());
+        return ResponseEntity.ok(authSpotifyClient.login(null).getAccessToken());
     }
 
 }
