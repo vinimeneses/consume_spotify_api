@@ -1,7 +1,10 @@
 package com.br.spotify.client;
 
+import com.fasterxml.jackson.annotation.JsonProperty;
+
 public class LoginResponse {
 
+    @JsonProperty("access_token")
     private String accessToken;
 
     public LoginResponse(String accessToken) {
